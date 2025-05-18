@@ -1,0 +1,585 @@
+:root {
+    --ffamily: "Montserrat", sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.welcome {
+    height: 6vh;
+    width: 100%;
+    background-color: #457d58;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.welcome p {
+    color: white;
+    display: inline;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-family: arial;
+}
+.welcome #wleft {
+    color: rgb(206, 198, 198);
+    font-size: 12px;
+    padding-left: 50px;
+}
+.welcome #wright {  
+    color: rgb(206, 198, 198);
+    font-size: 12px;
+    padding-right: 50px;
+}
+.welcome #wright:hover {
+    color: white;
+    font-size: 13px;
+    cursor:pointer;
+}
+.welcome #wleft:hover {
+    color: white;
+    font-size: 13px;
+    cursor:pointer;
+}
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:21vh;
+    width: 98vw;
+}
+.logo {
+    height: 90%;
+    width: 16%;
+    background-image: url(https://sparkhillelite.com/cdn/shop/files/Elite_logo_final.png?v=1688824679&width=600);
+    background-position: center;
+    /* background-image: url(https://sparkhillelite.com/cdn/shop/files/Elite_logo_final.png?v=1688824679&width=210); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 60px;
+}
+.navitems {
+    width: 50%;
+    list-style: none;
+    margin-left: -200px;
+}
+.navitems li {
+    user-select: none;
+    display: inline;
+    margin-right: 15px;
+    text-decoration: none;
+    color: grey;
+    font-size: 16px;
+    font-family: var(--ffamily);
+}
+ul.navitems li:first-child  {
+    color: black;
+    border-bottom: 2px solid black;
+}
+.navitems li:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+.sidenavicons {
+    width: 10%;
+    list-style: none;
+}
+.sidenavicons li {
+    margin-right: 15px;
+    user-select: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.sidenavicons li:hover {
+    font-size: 25px;
+}
+.upperimage {
+    display: flex;
+    height: 65vh;
+    width: 98.5vw;
+}
+.img1 {
+    background-image: url(//sparkhillelite.com/cdn/shop/files/spark_f_1_a9ce7771-28a2-4e62-ad37-9ac96f4aca45.png?v=1715419944&width=3840);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.img2 {
+    background-image: url(//sparkhillelite.com/cdn/shop/files/spark_f_22.png?v=1688987813&width=3840);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.img1, .img2 {
+    height: 100%;
+    width: 50%;
+}
+.upperimage>.btn {
+    position: absolute;
+    top: 70%;
+    left: 43%;
+    height: 149;
+    width: 450px;
+}
+.upperimage>.btn button {
+    font-family: var(--ffamily);
+    font-size: 18px;
+    height: 49px;
+    width: 43.5%;
+    border: 0;
+    outline: 2px solid rgba(69, 125, 88, 0.5);
+    color: rgba(69, 125, 88, 0.8);
+    background-color: transparent;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upperimage>.btn button:hover {
+    outline: 3px solid rgba(69, 125, 88, 0.5);
+    color: rgba(69, 125, 88, 1);
+    border: 2px solid black;
+}
+/* ---------------------------------------------------------------------------- Luggage Boxes Start */
+.luggagecollection {
+    height: 115vh;
+    width: 98.5vw;
+    display: flex;
+    justify-content: center;
+}
+.luggageboxes {
+    height: 100%;
+    width: 95%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+}
+/* Box1 */
+.lbox1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    background-image: url(//sparkhillelite.com/cdn/shop/files/1_f0aa346b-045d-48a7-a6c7-97eaa1921cc9.png?v=1747247439&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lbox1:hover #lbox1name {
+    text-decoration: underline;
+}
+.lbox1:hover {
+    background-size: 102%;
+}
+
+#lbox1name, #lbox1price, #lbox1price2{
+    font-family: var(--ffamily);
+    display: inline-block;
+    text-align: center;
+}
+#lbox1name {
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+}
+#lbox1price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+    position: relative;
+    top: 30px;
+}
+#lbox1price2 {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+/* Box2 */
+.lbox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    background-image: url(//sparkhillelite.com/cdn/shop/files/2_43c4395d-fa2b-49ac-95fa-f12c41105096.png?v=1741383016&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lbox2:hover #lbox2name {
+    text-decoration: underline;
+}
+.lbox2:hover {
+    background-size: 102%;
+}
+
+#lbox2name, #lbox2price, #lbox2price2{
+    font-family: var(--ffamily);
+    display: inline-block;
+    text-align: center;
+}
+#lbox2name {
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+}
+#lbox2price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+    position: relative;
+    top: 30px;
+}
+#lbox2price2 {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+/* Box3 */
+.lbox3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    background-image: url(//sparkhillelite.com/cdn/shop/files/3_da4c0866-e79b-4330-b68c-ea15bc4054b3.png?v=1741809600&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lbox3:hover #lbox3name {
+    text-decoration: underline;
+}
+.lbox3:hover {
+    background-size: 102%;
+}
+#lbox3name, #lbox3price, #lbox3price2{
+    font-family: var(--ffamily);
+    display: inline-block;
+    text-align: center;
+}
+#lbox3name {
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+}
+#lbox3price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+    position: relative;
+    top: 30px;
+}
+#lbox3price2 {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+
+/* Box4 */
+.lbox4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    background-image: url(//sparkhillelite.com/cdn/shop/files/1_74231fd6-f679-4d1b-a87a-534c7ed59794.png?v=1747254187&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lbox4:hover #lbox4name {
+    text-decoration: underline;
+}
+.lbox4:hover {
+    background-size: 102%;
+}
+#lbox4name, #lbox4price, #lbox4price2{
+    font-family: var(--ffamily);
+    display: inline-block;
+    text-align: center;
+}
+#lbox4name {
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+}
+#lbox4price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+    position: relative;
+    top: 30px;
+}
+#lbox4price2 {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+/* Box5 */
+.lbox5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    background-image: url(//sparkhillelite.com/cdn/shop/files/1_02549c43-86d8-46f0-81f9-c25f0caf84ee.png?v=1733928369&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lbox5:hover #lbox5name {
+    text-decoration: underline;
+}
+.lbox5:hover {
+    background-size: 102%;
+}
+#lbox5name, #lbox5price, #lbox5price2{
+    font-family: var(--ffamily);
+    display: inline-block;
+    text-align: center;
+}
+#lbox5name {
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+}
+#lbox5price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+    position: relative;
+    top: 30px;
+}
+#lbox5price2 {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+/* Box6 */
+.lbox6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    background-image: url(//sparkhillelite.com/cdn/shop/files/1_9fefe762-8d4f-4a60-8e89-5f98bd630701.png?v=1733931331&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lbox6:hover #lbox6name {
+    text-decoration: underline;
+}
+.lbox6:hover {
+    background-size: 102%;
+}
+#lbox6name, #lbox6price, #lbox6price2{
+    font-family: var(--ffamily);
+    display: inline-block;
+    text-align: center;
+}
+#lbox6name {
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+}
+#lbox6price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+    position: relative;
+    top: 30px;
+}
+#lbox6price2 {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+
+/* Box7 */
+.lbox7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    background-image: url(//sparkhillelite.com/cdn/shop/files/1_5c0144ea-a957-4ffd-8886-f78ad3fcec98.png?v=1747216942&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lbox7:hover #lbox7name {
+    text-decoration: underline;
+}
+.lbox7:hover {
+    background-size: 102%;
+}
+#lbox7name, #lbox7price, #lbox7price2{
+    font-family: var(--ffamily);
+    display: inline-block;
+    text-align: center;
+}
+#lbox7name {
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+}
+#lbox7price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+    position: relative;
+    top: 30px;
+}
+#lbox7price2 {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+
+/* Box8 */
+.lbox8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    background-image: url(//sparkhillelite.com/cdn/shop/files/WhatsAppImage2024-10-03at5.18.04PM_1.jpg?v=1727957920&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lbox8:hover #lbox8name {
+    text-decoration: underline;
+}
+.lbox8:hover {
+    background-size: 102%;
+}
+#lbox8name, #lbox8price2{
+    font-family: var(--ffamily);
+    display: inline-block;
+    text-align: center;
+}
+#lbox8name {
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+}
+
+#lbox8price2 {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+
+/* Box9 */
+.lbox9 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    background-image: url(//sparkhillelite.com/cdn/shop/files/5_02198d96-0913-4a09-ae68-4a8868116332.png?v=1747483275&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lbox9:hover #lbox9name {
+    text-decoration: underline;
+}
+.lbox9:hover {
+    background-size: 102%;
+}
+#lbox9name, #lbox9price, #lbox9price2{
+    font-family: var(--ffamily);
+    display: inline-block;
+    text-align: center;
+}
+#lbox9name {
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+}
+#lbox9price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+    position: relative;
+    top: 30px;
+}
+#lbox9price2 {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+
+/* Box10 */
+.lbox10 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+    width: 100%;
+    background-image: url(//sparkhillelite.com/cdn/shop/files/1_d76ca5ed-d34a-4f9f-9719-05935b3dec0b.png?v=1747345475&width=533);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.lbox10:hover #lbox10name {
+    text-decoration: underline;
+}
+.lbox10:hover {
+    background-size: 102%;
+}
+#lbox10name, #lbox10price, #lbox10price2{
+    font-family: var(--ffamily);
+    display: inline-block;
+    text-align: center;
+}
+#lbox10name {
+    position: relative;
+    font-size: 15px;
+    top: 30px;
+}
+#lbox10price {
+    color: grey;
+    font-size: 14px;
+    text-decoration: line-through;
+    position: relative;
+    top: 30px;
+}
+#lbox10price2 {
+    font-size: 20px;
+    position: relative;
+    top: 30px;
+}
+
+
+/* --------------------------------------------------------------------------------- Luggage Boxes End */
+.viewluggage {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 3vh;
+    width: auto;
+}
+.viewluggage a {
+    font-family: var(--ffamily);
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    
+}
+.viewluggage a:hover {
+    border-bottom: 3px solid black;
+}
+/* ---------------------------------------- viewall end */
+.collectionall {
+    height: 50vh;
+}
